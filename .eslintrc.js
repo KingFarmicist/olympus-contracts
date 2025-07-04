@@ -1,21 +1,7 @@
-module.exports = {
-    root: true,
-    parser: "@typescript-eslint/parser",
-    parserOptions: {
-        ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-        sourceType: "module", // Allows for the use of imports
-    },
-    env: {
-        commonjs: true,
-        node: true,
-        mocha: true,
-    },
-    plugins: ["@typescript-eslint"],
-    extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
-    rules: {
-        "no-empty": "off",
-        "no-empty-function": "off",
-        "@typescript-eslint/no-empty-function": "off",
-        "@typescript-eslint/no-var-requires": "off",
-    },
-};
+# hello
+export DAPP_REMAPPINGS="hardhat/=node_modules/hardhat/
+@openzeppelin/=node_modules/@openzeppelin/
+hardhat-deploy/=node_modules/hardhat-deploy/
+ds-test/=test/dapp_test/lib/ds-test/src/"
+export DAPP_SRC=test/dapp_test/src
+# (rest of the content continues...)
